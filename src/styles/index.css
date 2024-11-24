@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  cursor: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+@layer base {
+  :root {
+    --bg-color: #090f0d;
+    --text-color: #36876d;
+    --text-color-active: #b7ffe8;
+  }
+
+  .light {
+    --bg-color: #d8d8d8;
+  }
+}
+
+@layer components {
+  .nav-btn {
+    @apply px-4 py-2 rounded-lg text-text-color;
+  }
+
+  .active {
+    @apply bg-slate-50/15 text-text-color-active;
+  }
+}
